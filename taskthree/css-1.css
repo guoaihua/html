@@ -1,0 +1,42 @@
+*{    margin: 0;
+    padding: 20px;}
+
+body {
+    background: #eee;
+    border: 1px solid #999;
+    width: auto;
+    display: inline-block;
+    min-width: 1000px;
+}
+html {
+    background-color: white;
+}
+
+.left {
+    width: 200px;
+    border: 1px solid #999;
+    float: left;
+    background-color: white;
+}
+.center {
+    border: 1px solid #999;
+    margin-left: 260px;
+    margin-right: 180px;
+    background-color: white;
+}
+.right {
+    border: 1px solid #999;
+    width: 120px;
+    float: right;
+    text-align: center;
+    background-color: white;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+    background: url("logo.png") no-repeat center;
+
+}
+.zhumeng {
+    float: left;
+}
