@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex布局</title>
+    <style>
+        *{padding: 0;margin: 0}
+       .container{
+           padding: 20px;
+            display: flex;
+            flex-direction: row;
+           flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid grey;
+        }
+
+
+        @media only screen and (max-width:640px) {
+
+            .one {
+                order: 2;
+            }
+            .two {
+                order: 2;
+            }
+            .three {
+                order: 2;
+            }
+            .four {
+                order: 1;
+                margin-bottom: 20px;
+            }
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+
+            }
+
+        }
+
+        .one {
+            height: 118px;
+            border: 1px solid red;
+        }
+        .two {
+            height: 98px;
+            border: 1px solid red;
+        }
+        .three {
+            height: 38px;
+            border: 1px solid red;
+        }
+        .four {
+            height: 198px;
+            border: 1px solid blue;
+
+        }
+
+        .flex-item {
+
+            width: 148px;
+            line-height: 150px;
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="container" id="container">
+        <div class="flex-item one"></div>
+        <div class="flex-item two"></div>
+        <div class="flex-item three"></div>
+        <div class="flex-item four"></div>
+        </div>
+
+</body>
+</html>
